@@ -243,25 +243,6 @@ CodeAtlas works in three main stages:
    - Provides chat interface for follow-up questions
    - Streams AI responses for responsive UX
 
-## Limitations
-
-- **File Size**: Files larger than 500KB are skipped during analysis
-- **Token Limits**: Gemini API has token limits; very large repositories may be truncated
-- **Skipped Content**: The following are automatically excluded:
-  - Directories: `node_modules`, `.git`, `dist`, `build`, `.next`, `coverage`, `__pycache__`, `vendor`, `target`, `.venv`
-  - Files: `.DS_Store`, `Thumbs.db`, `.env.local`, `.env.development`
-- **Rate Limits**: Subject to GitHub API rate limits (60 requests/hour for unauthenticated)
-- **Binary Files**: Non-text files cannot be analyzed
-- **Private Repos**: Requires GitHub token for access
-
-## Roadmap
-
-- Support for additional version control systems (GitLab, Bitbucket)
-- More diagram types and customization options
-- Export analysis reports (PDF, Markdown)
-- Collaborative features for team analysis
-- Integration with CI/CD pipelines
-
 ## License
 
 MIT
